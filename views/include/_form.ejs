@@ -2,16 +2,16 @@
  <form action="/api/users" method="POST" id="add_user">
     <div class="new_user">
         <div class="form-group">
-            <label for="name" class="text-light">Name</label>
+            <label for="name"><b>Name</b> <span style="color: red; margin-top:">*</span></label>
             <input type="hidden" name="id" value="">
             <input type="text" name="name" value="" placeholder="Enter your Full Name">
         </div>
         <div class="form-group">
-            <label for="Email" class="text-light">Email</label>
+            <label for="Email"><b>Email</b> <span style="color: red; margin-top:">*</span></label>
             <input type="text" name="email" value="" placeholder="Enter your Email id">
         </div>
         <div class="form-group">
-            <label for="gender" class="text-light">Gender</label>
+            <label for="gender"><b>Gender</b></label>
             <div class="radio inline">
                 <input type="radio" id="radio-2" name="gender" value="Male" >
                 <label for="radio-2" class="radio-label">Male</label>
@@ -23,19 +23,20 @@
         </div>
 
         <div class="form-group">
-            <label for="gender" class="text-light">Status</label>
+            <label for="gender"><b>Status</b></label>
             <div class="radio inline">
                 <input type="radio" id="radio-4" name="status" value="Active" >
-                <label for="radio-4" class="radio-label">Active</label>
+                <label for="radio-4" class="radio-label" style="color:green;">Active</label>
             </div>
             <div class="radio inline">
                 <input type="radio" id="radio-5" name="status" value="Inactive" >
-                <label for="radio-5" class="radio-label">Inactive</label>
+                <label for="radio-5" class="radio-label" style="color:red;">Inactive</label>
             </div>
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn text-dark update">Save</button>
+            <!-- <button type="submit" class="btn text-dark update">Save</button> -->
+            <button class="custom-btn btn-12"><span>Click!</span><span>Save Details</span></button>
         </div>
 
     </div>
